@@ -11,7 +11,7 @@ public class HelloWorld extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         Group root = new Group();
-        Camera camera = new Camera(100, 150);
+        Camera camera = new Camera(100, 250);
         GameScene gameScene = new GameScene(root, 600, 400, true);
 
         stage.setScene(gameScene);
@@ -27,8 +27,12 @@ public class HelloWorld extends Application {
         root.getChildren().add(sprite);
 
         System.out.println("Coordonnées de la caméra: " + camera.toString());
-    }
 
+        camera.setX(1600);
+        gameScene.render(camera);
+
+        System.out.println("Nouvelles Coordonnées de la caméra: " + camera.toString());
+    }
     public static void main(String[] args){
         launch(args);
     }
