@@ -8,11 +8,8 @@ public abstract class AnimatedThing {
     private final ImageView imageView;
     private final int attitude;
     private final int index;
-<<<<<<< HEAD
-=======
     private final int duration;
     private final int maxIndex;
->>>>>>> b5c85e5 (V.2)
     private final double windowSize;
     private final double frameOffset;
 
@@ -22,11 +19,8 @@ public abstract class AnimatedThing {
         this.y = y;
         this.attitude = attitude;
         this.index = index;
-<<<<<<< HEAD
-=======
         this.duration = duration;
         this.maxIndex = maxIndex;
->>>>>>> b5c85e5 (V.2)
         this.windowSize = windowSize;
         this.frameOffset = frameOffset;
 
